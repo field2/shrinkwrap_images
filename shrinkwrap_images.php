@@ -12,7 +12,6 @@ Version: 1.0
 Author URI: http://bendunkle.com/
 */
 
-
 function eol_enqueue_script() {
 	wp_enqueue_style( 'swimgcss', plugin_dir_url(__FILE__) . 'shrinkwrap_images.css'	); 
 	wp_register_script( 'swimgjs', plugin_dir_url(__FILE__) . 'shrinkwrap_images.js' ,array('jquery'));
