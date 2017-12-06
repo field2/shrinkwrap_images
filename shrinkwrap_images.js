@@ -1,23 +1,16 @@
+// Get directory path of plugin directory
 var plugindir = php_vars.plugindir;
-var gifpath = '<img src="' + plugindir +   '" class="clear">';
-var swimg = function() {
-    jQuery("img").wrap('<div class="shrink"></div>');
-    jQuery("img").after(gifpath);
+
+// 
+var gifpath = '<img src="' + plugindir + '" class="eol_si_clear">';
+
+// Use jQuery to wrap each img tag in the shrinkwrap div
+var eol_si_img = function() {
+	jQuery("img").wrap('<div class="eol_si_shrink"></div><!-- /.eol_si_shrink -->');
+	jQuery("img").after(gifpath);
 };
 
-
-
+// Run shrinkwrap on doc load
 jQuery(document).ready(function() {
-
-    swimg();
-
-
-});
-
-
-jQuery(document).on('change', '#swipebox-overlay',function(){
-
-   alert("gfdfgdf");
-
-
+	eol_si_img();
 });
