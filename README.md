@@ -3,6 +3,8 @@ Contributors: EmpireOfLight
 Tags: image, anti-piracy
 Requires at least: 2.8
 Tested up to: 4.9.1
+Stable tag: trunk
+
 
 Add a protective coating onto your images to discourage downloading. 
 
@@ -38,17 +40,23 @@ No. It is just a preventative step for image authors who want to do whatever the
 
 At my WordCamp Rochester talk, WordPress for Artists, I was asked if there were any plugins that could do this. Not finding one, I set about writing one myself.
  
-= 1.0 =
- - First stable version (thanks for support Andrew - PageLines.com)
+ == Changelog ==
 
-= 0.9. =
- - Initial Release
+= 1.2 =
+* Bug fixes.
+* Added plugin banner.
+
+= 1.1 =
+* Now overlays clear.gif onto lightboxed images.
+* Added plugin icon.
+
+=1.0 =
+* Initial Release.
  
  
 == Upgrade Notice ==
 
 Make sure you get the latest version.
-
 
 == Localization ==
 
