@@ -3,7 +3,7 @@ Contributors: EmpireOfLight, joemoto
 Tags: image, anti-piracy
 Requires at least: 2.8
 Tested up to: 4.9.8
-Stable tag: trunk
+Stable tag: 1.2.2
 
 
 Add a protective coating onto your images to discourage downloading. 
