@@ -1,8 +1,8 @@
 === Shrinkwrap Images  ===
-Contributors: EmpireOfLight
+Contributors: EmpireOfLight, joemoto
 Tags: image, anti-piracy
 Requires at least: 2.8
-Tested up to: 4.9.1
+Tested up to: 4.9.8
 Stable tag: trunk
 
 
@@ -41,6 +41,9 @@ No. It is just a preventative step for image authors who want to do whatever the
 At my WordCamp Rochester talk, WordPress for Artists, I was asked if there were any plugins that could do this. Not finding one, I set about writing one myself.
  
  == Changelog ==
+
+= 1.2.2 =
+* optimized php (thanks joemoto)
 
 = 1.2 =
 * Bug fixes.
