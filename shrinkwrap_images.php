@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/field2/shrinkwrap_images
  * Description: This plugin will help prevent image downloads.
  * Author: Ben Dunkle
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author URI: https://bendunkle.com/
 */
 
