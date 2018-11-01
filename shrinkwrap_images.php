@@ -13,9 +13,7 @@
  * @package Shrinkwrap_Images
  */
 
-if ( ! defined( 'WPINC' ) ) {
-	die();
-}
+defined( 'ABSPATH' ) or die();
 
 /**
  * Enqueue items
@@ -23,16 +21,33 @@ if ( ! defined( 'WPINC' ) ) {
  * @since 1.0.0
  */
 function eol_si_enqueue_script() {
-	wp_enqueue_style( 'swimgcss', plugin_dir_url( __FILE__ ) . 'shrinkwrap-images.css' );
+	wp_enqueue_style(
+		'swimgcss',
+		plugin_dir_url( __FILE__ ) . 'shrinkwrap-images.css',
+		array(),
+		date( 'Ymd' )
+	);
 
-	wp_enqueue_script( 'arrive', plugin_dir_url( __FILE__ ) . 'arrive.min.js' );
+	wp_enqueue_script(
+		'arrive',
+		plugin_dir_url( __FILE__ ) . 'arrive.min.js',
+		array(),
+		date( 'Ymd' ),
+		false
+	);
 
-	wp_register_script( 'swimgjs', plugin_dir_url( __FILE__ ) . 'shrinkwrap-images.js', array( 'jquery' ), false, true );
+	wp_register_script(
+		'swimgjs',
+		plugin_dir_url( __FILE__ ) . 'shrinkwrap-images.js',
+		array( 'jquery' ),
+		date( 'Ymd' ),
+		true
+	);
 
 	wp_localize_script(
-		'swimgjs', 'php_vars', array(
-			'plugindir' => plugin_dir_url( __FILE__ ) . 'clear.gif',
-		)
+		'swimgjs',
+		'php_vars',
+		array( 'plugindir' => plugin_dir_url( __FILE__ ) . 'clear.gif' )
 	);
 
 	wp_enqueue_script( 'swimgjs' );
