@@ -39,7 +39,7 @@ At my WordCamp Rochester talk, WordPress for Artists, I was asked if there were 
  == Changelog ==
 
 = 1.2.3 =
-* Added dev tools (PHPCS, ESLINT, TravisCI).
+* Added dev tools (PHPCS, ESLINT, and TravisCI).
 
 = 1.2.2 =
 * Optimized php (thanks joemoto).
