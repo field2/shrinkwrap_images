@@ -6,25 +6,36 @@
  * Author: Ben Dunkle
  * Version: 1.2.2
  * Author URI: https://bendunkle.com/
-*/
+ * License: GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ *
+ * @since 1.0.0
+ * @package Shrinkwrap_Images
+ */
+
+if ( ! defined( 'WPINC' ) ) {
+	die();
+}
 
 /**
  * Enqueue items
- * 
+ *
  * @since 1.0.0
  */
 function eol_si_enqueue_script() {
-	wp_enqueue_style( 'swimgcss', plugin_dir_url(__FILE__) . 'shrinkwrap_images.css' ); 
+	wp_enqueue_style( 'swimgcss', plugin_dir_url( __FILE__ ) . 'shrinkwrap-images.css' );
 
-	wp_enqueue_script( 'arrive', plugin_dir_url(__FILE__) . 'arrive.min.js' );
+	wp_enqueue_script( 'arrive', plugin_dir_url( __FILE__ ) . 'arrive.min.js' );
 
-	wp_register_script( 'swimgjs', plugin_dir_url(__FILE__) . 'shrinkwrap_images.js', array( 'jquery' ), false, true );
+	wp_register_script( 'swimgjs', plugin_dir_url( __FILE__ ) . 'shrinkwrap-images.js', array( 'jquery' ), false, true );
 
-	wp_localize_script( 'swimgjs', 'php_vars', array(
-		'plugindir' => plugin_dir_url( __FILE__ ) . 'clear.gif'
-	) );
-	
-	wp_enqueue_script( 'swimgjs');
+	wp_localize_script(
+		'swimgjs', 'php_vars', array(
+			'plugindir' => plugin_dir_url( __FILE__ ) . 'clear.gif',
+		)
+	);
+
+	wp_enqueue_script( 'swimgjs' );
 }
 
 add_action( 'wp_enqueue_scripts', 'eol_si_enqueue_script' );
