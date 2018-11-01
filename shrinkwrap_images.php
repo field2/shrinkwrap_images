@@ -13,7 +13,7 @@
  * @package Shrinkwrap_Images
  */
 
-defined( 'ABSPATH' ) or die();
+defined( 'ABSPATH' ) || die();
 
 /**
  * Enqueue items
