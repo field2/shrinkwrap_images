@@ -12,7 +12,9 @@ env:
   - WP_VERSION=latest WP_MULTISITE=0
 
 before_script:
+  - npm install -g gulp-cli
   - yarn install
+  - gulp
 
 script:
   - find . -name composer -prune -o -name node_modules -prune -o -name '*.php' -exec php -lf {} \; >/dev/null
@@ -20,14 +22,14 @@ script:
   - yarn run js-lint
 
 deploy:
-  - provider: script
-    script: chmod +x ./node_modules/@boldgrid/wordpress-tag-sync/release.sh && ./node_modules/@boldgrid/wordpress-tag-sync/release.sh
-    skip_cleanup: true
-    on:
-      tags: true
   - provider: releases
     api_key: "${GITHUB_TOKEN}"
     file: "shrinkwrap_images.zip"
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: script
+    script: chmod +x ./node_modules/@boldgrid/wordpress-tag-sync/release.sh && ./node_modules/@boldgrid/wordpress-tag-sync/release.sh
     skip_cleanup: true
     on:
       tags: true
