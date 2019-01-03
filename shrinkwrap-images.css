@@ -1,6 +1,7 @@
 .eol_si_shrink {
 	display: inline-block;
 	position: relative;
+	width:100%;
 	height:100%;
 }
 
@@ -11,4 +12,8 @@
 	transform: translateY(-100%) !important;
 	width: 100% !important;
 	background:none !important;
+}
+
+.alignright + img.eol_si_clear {
+	transform:none !important;
 }
