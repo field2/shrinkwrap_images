@@ -15,12 +15,6 @@ You shouldn't notice any slowdown on your site after installing the plugin; it h
 
 In no way does the plugin claim to prevent downloads entirely; it is merely an added protective measure for your images.
 
-### Usage ###
-
-* Install the plugin through the Install Plugins interface or by uploading the `shrinkwrap_images` folder to your `/wp-content/plugins/` directory.
-* Activate the Shrinkwrap Images plugin.
-* That's it! Any image on your site is now coated with a clear, protective layer :)
-
 ## Installation ##
 
 1. Install the plugin through the Install Plugins interface or by uploading the `shrinkwrap_images` folder to your `/wp-content/plugins/` directory.
