@@ -5,6 +5,11 @@
 	height:100%;
 }
 
+.eol_si_shrink img {
+    width: 100%;
+    height: auto;
+}
+
 .eol_si_clear {
 	display: block !important;
 	height: 100% !important;
