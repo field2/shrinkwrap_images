@@ -1,22 +1,19 @@
 .eol_si_shrink {
-	display: inline-block;
+	display:flex;
+	height: auto;
+	width: 100%;
 	position: relative;
-	width:100%;
-	height:100%;
+	align-self: stretch;
 }
 
 .eol_si_shrink img {
-    width: 100%;
-    height: auto;
 }
 
 .eol_si_clear {
 	display: block !important;
+	width: 100%;
 	height: 100% !important;
 	position: absolute !important;
-	transform: translateY(-100%) !important;
-	width: 100% !important;
-	background:none !important;
 }
 
 .alignright + img.eol_si_clear {
