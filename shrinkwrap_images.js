@@ -7,8 +7,9 @@ var gifpath = '<img src="' + plugindir + '" class="eol_si_clear">';
 // Use jQuery to wrap each img tag in the shrinkwrap div
 jQuery( document ).on( 'ready', function() {
 	jQuery( 'img' )
-		.wrap( '<div class="eol_si_shrink"></div>' )
-		.after( gifpath );
+	.not('[src$=".gif"]')
+	.wrap( '<div class="eol_si_shrink"></div>' )
+	.after( gifpath );
 } );
 
 // Run shrinkwrap when lightbox openend
