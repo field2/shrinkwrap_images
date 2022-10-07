@@ -2,8 +2,8 @@
 Contributors: EmpireOfLight, joemoto
 Tags: image, anti-piracy
 Requires at least: 2.8
-Tested up to: 5.9
-Stable tag: 1.2.7
+Tested up to: 6.0
+Stable tag: 1.2.8
 
 
 Add a protective coating onto your images to discourage downloading. 
@@ -46,6 +46,9 @@ If your images are in a slider, make sure they link to "none" in your slider's s
 At my WordCamp Rochester 2017 talk, WordPress for Artists, I was asked if there were any plugins that could do this. Not finding one, I set about writing one myself.
  
  == Changelog ==
+
+ = 1.2.8 =
+* Tested up to WP version 6.0.
 
  = 1.2.7 =
 * Tested up to WP version 5.9.
