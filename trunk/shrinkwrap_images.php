@@ -1,10 +1,10 @@
-<?php 
+<?php
 /**
  * Plugin Name: Shrinkwrap Images
  * Plugin URI: https://wordpress.org/plugins/shrinkwrap-images
  * Description: This plugin will help prevent image downloads.
  * Author: Ben Dunkle
- * Version: 1.3.2
+ * Version: 1.3.3
  * Author URI: https://bendunkle.com/
  */
 
