@@ -1,0 +1,24 @@
+.eol_si_shrink {
+	display: inline-block;
+	position: relative;
+	width:100%;
+	height:100%;
+}
+
+.eol_si_shrink img {
+    width: 100%;
+    height: auto;
+}
+
+.eol_si_clear {
+	display: block !important;
+	height: 100% !important;
+	position: absolute !important;
+	transform: translateY(-100%) !important;
+	width: 100% !important;
+	background:none !important;
+}
+
+.alignright + img.eol_si_clear {
+	transform:none !important;
+}

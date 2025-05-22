@@ -1,0 +1,12 @@
+.eol_si_shrink {
+	display: inline-block;
+	position: relative;
+}
+
+.eol_si_clear {
+	display: block;
+	height: 100%;
+	position: absolute;
+	transform: translateY(-100%);
+	width: 100%;
+}
